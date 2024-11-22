@@ -1,4 +1,4 @@
-body {
+  body {
     width: 300px;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -20,17 +20,30 @@ body {
     display: none;
   }
   
+  .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+
   .platform-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 10px 0;
+  }
+
+  .top-row, .bottom-row {
+    gap: 10px;  /* Space between platform buttons */
   }
   
   .platform {
-    margin: 10px;
-    text-align: center;
-    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: none;
+    border: none;
     cursor: pointer;
   }
   
@@ -46,18 +59,44 @@ body {
   }
   
   .platform span {
-    display: block;
     margin-top: 5px;
     font-size: 14px;
     color: #333;
   }
+
+  .backup-section {
+    display: flex;
+    justify-content: flex-end; /* Align everything to the right */
+    align-items: center; /* Center vertically */
+    margin: 10px 0;
+  }
   
-  .input-container {
+  .backup-label {
+    font-size: 11px;
+    color: #333;
+    margin-right: 4px; /* Space between label and buttons */
+  }
+
+  .backup-buttons-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10px 0;
+  gap: 5px;
+  padding-right: 27px;  /* Add padding on the right to fine-tune */
 }
+  
+  .backup-btn {
+    padding: 4px 10px;
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .backup-btn:hover {
+    background-color: #e0e0e0;
+  }
 
 #addressInput {
   flex: 1;  /* Takes up remaining space */

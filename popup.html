@@ -12,8 +12,9 @@
       <img src="icons/paste.png" alt="Paste Icon">
     </button>
   </div>
-  <div class="platform-container">
-    <!-- Platform buttons remain unchanged -->
+
+  <!-- Top row with the first 3 platforms -->
+  <div class="platform-container top-row">
     <button class="platform" data-url="https://pump.fun/coin/">
       <img src="icons/pumpfun.png" alt="Pump.fun">
       <span>Pump.fun</span>
@@ -22,19 +23,36 @@
       <img src="icons/dexscreener.png" alt="Dexscreener">
       <span>Dexscreener</span>
     </button>
-    <button class="platform" data-url="https://solscan.io/">
-      <img src="icons/solscan.png" alt="Solscan">
-      <span>Solscan</span>
-    </button>
     <button class="platform" data-url="https://bullx.io/terminal?chainId=1399811149&address=">
       <img src="icons/bullx.jpg" alt="Bullx.io">
       <span>Bullx.io</span>
     </button>
+  </div>
+
+  <!-- Middle row with backup buttons -->
+  <div class="backup-section">
+    <span class="backup-label">Backups:</span>
+    <div class="backup-buttons-container">
+      <button class="backup-btn" data-url="https://backup.bullx.io/terminal?chainId=1399811149&address=">1</button>
+      <button class="backup-btn" data-url="https://backup2.bullx.io/terminal?chainId=1399811149&address=">2</button>
+    </div>
+  </div>
+  <!-- Bottom row with the remaining platforms -->
+  <div class="platform-container bottom-row">
     <button class="platform" data-url="https://photon-sol.tinyastro.io/en/lp/">
       <img src="icons/photonsol.svg" alt="Photon">
       <span>Photon</span>
     </button>
+    <button class="platform" data-url="https://solscan.io/account/">
+      <img src="icons/solscan.png" alt="Solscan">
+      <span>Solscan</span>
+    </button>
+    <button class="platform" data-url="https://t.me/paris_trojanbot?start=r-jnthn7-">
+        <img src="icons/trojanbot.jpeg" alt="Trojan">
+        <span>Trojan</span>
+    </button>
   </div>
+
   <div id="errorMessage"></div>  <!-- Error message container -->
   <script src="popup.js"></script>
 </body>
