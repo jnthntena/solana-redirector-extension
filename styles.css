@@ -1,0 +1,83 @@
+body {
+    width: 300px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  #addressInput {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: none;
+  }
+  
+  .platform-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .platform {
+    margin: 10px;
+    text-align: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .platform img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .platform img:hover {
+    transform: scale(1.1);
+  }
+  
+  .platform span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+#addressInput {
+  flex: 1;  /* Takes up remaining space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-right: none;  /* Remove border between input and button */
+  border-radius: 5px 0 0 5px;
+}
+
+#pasteClipboardBtn {
+  width: 50px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-left: none;  /* Remove border between input and button */
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;  /* Rounded corner on the right side */
+}
+
+#pasteClipboardBtn img {
+  width: 20px;
+  height: 20px;
+}

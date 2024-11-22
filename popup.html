@@ -1,54 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Crypto Redirector</title>
-  <style>
-    body {
-      width: 300px;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f9f9f9;
-    }
-    #addressInput {
-      width: 90%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .platform-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .platform {
-      margin: 10px;
-      text-align: center;
-      border: none;
-      background: none;
-      cursor: pointer;
-    }
-    .platform img {
-      width: 50px;
-      height: 50px;
-      border-radius: 10px;
-      transition: transform 0.3s;
-    }
-    .platform img:hover {
-      transform: scale(1.1);
-    }
-    .platform span {
-      display: block;
-      margin-top: 5px;
-      font-size: 14px;
-      color: #333;
-    }
-  </style>
+    <title>Crypto Redirector</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h2>Crypto Redirector</h2>
-  <input type="text" id="addressInput" placeholder="Enter crypto address" />
+  <div class="input-container">
+    <input type="text" id="addressInput" placeholder="Enter crypto address" />
+    <button id="pasteClipboardBtn" title="Paste from Clipboard">
+      <img src="icons/paste.png" alt="Paste Icon">
+    </button>
+  </div>
   <div class="platform-container">
+    <!-- Platform buttons remain unchanged -->
     <button class="platform" data-url="https://pump.fun/coin/">
       <img src="icons/pumpfun.png" alt="Pump.fun">
       <span>Pump.fun</span>
@@ -70,6 +35,7 @@
       <span>Photon</span>
     </button>
   </div>
+  <div id="errorMessage"></div>  <!-- Error message container -->
   <script src="popup.js"></script>
 </body>
 </html>
