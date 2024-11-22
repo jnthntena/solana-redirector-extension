@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Crypto Address Redirector",
+    "version": "1.0",
+    "description": "Redirect to different platforms with a crypto address.",
+    "permissions": ["tabs"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "favicon.png",
+        "48": "favicon.png",
+        "128": "favicon.png"
+      }
+    }
+  }
+  
