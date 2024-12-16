@@ -34,10 +34,14 @@
     margin: 10px 0;
   }
 
-  .top-row, .bottom-row {
+  .top-row {
     gap: 10px;  /* Space between platform buttons */
   }
-  
+
+  .middle-row, .bottom-row {
+    gap: 20px;  /* Space between platform buttons */
+  }
+
   .platform {
     display: flex;
     flex-direction: column;
@@ -46,21 +50,21 @@
     border: none;
     cursor: pointer;
   }
-  
+
   .platform img {
     width: 50px;
     height: 50px;
     border-radius: 10px;
     transition: transform 0.3s;
   }
-  
+
   .platform img:hover {
     transform: scale(1.1);
   }
-  
+
   .platform span {
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 12px;
     color: #333;
   }
 
@@ -80,8 +84,8 @@
   .backup-buttons-container {
   display: flex;
   gap: 5px;
-  padding-right: 27px;  /* Add padding on the right to fine-tune */
-}
+  padding-right: 38px;  /* Add padding on the right to fine-tune */
+  }
   
   .backup-btn {
     padding: 4px 10px;
